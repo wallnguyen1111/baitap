@@ -23,5 +23,4 @@ public class Student {
     private String email;
     @Column(name = "phone")
     private String phone;
-
 }

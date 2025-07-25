@@ -6,7 +6,7 @@
     <title>Student</title>
 </head>
 <body>
-    <table>
+    <table border="1">
         <tr>
              <th>#</th>
             <th>id</th>
@@ -15,6 +15,7 @@
             <th>Phone</th>
             <th>Service</th>
         </tr>
+        <a href="/students/new">Them</a>
         <c:forEach var="tempStudent" items="${students}" varStatus="i">
         <tr>
             <td>${i.index + 1 }</td>
@@ -22,7 +23,7 @@
             <td>${tempStudent.name}</td>
             <td>${tempStudent.email}</td>
             <td>${tempStudent.phone}</td>
-            <td><a href="/students/new">Them</a>
+            <td>
                 <a href="/students/xoa?id=${tempStudent.id}">Xoa</a>
                 <a href="/students/chi-tiet?id=${tempStudent.id}">update</a>
             </td>
